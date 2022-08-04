@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-libreria-deploy
+  labels:
+    name: microservice-libreria-deploy
+    app: microservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice-libreria
+      type: microservice
+  template:
+    metadata:
+      name: microservice-libreria-pod
+      labels:
+        app: microservice-libreria
+        type: microservice
+  spec:
+    containers:
+      - name: microservice-libreria-app
+        image: ivanimg20/serviciosapilibreria
+        ports:
+          - containerPort: 80
+        env:
+          - name: MongoDb__ConnectionString
+            value: mongodb://ivanmtz:$7432Img#2022@mongo-service:27017

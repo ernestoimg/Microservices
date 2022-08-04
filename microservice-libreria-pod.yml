@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: microservice-libreria-pod
+  labels:
+    app: microservice-libreria
+    type: microservice
+spec:
+  containers:
+    - name: microservice-libreria-app
+      image: ivanimg20/serviciosapilibreria
+      ports:
+        - containerPort: 80
+      env:
+        - name: MongoDb__ConnectionString
+          value: mongodb://ivanmtz:$7432Img#2022@mongo-service:27017

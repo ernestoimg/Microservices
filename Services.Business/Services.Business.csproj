@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services.ContextMongoDb\Services.ContextMongoDb.csproj" />
+    <ProjectReference Include="..\Services.Entities\Services.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

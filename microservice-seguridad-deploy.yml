@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-seguridad-deploy
+  labels:
+    name: microservice-seguridad-deploy
+    app: microservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice-seguridad
+      type: microservice
+  template:
+    metadata:
+      name: microservice-seguridad-pod
+      labels:
+        app: microservice-seguridad
+        type: microservice
+    spec:
+      containers:
+        - name: microservice-seguridad-app
+          image: ivanimg20/securityapiservice
+          ports:
+            - containerPort: 80
+          env:
+            - name: ConnectionStrings__ConexionDb
+              value: Server=mssql-service;Database=Seguridad;User=sa;Password=$7432Img#2022

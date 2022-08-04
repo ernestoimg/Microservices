@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios.API.Libreria", "Servicios.API.Libreria\Servicios.API.Libreria.csproj", "{70829F33-FD95-4A3C-9B64-8C2FEC66CFFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Entities", "Services.Entities\Services.Entities.csproj", "{515A29F9-7C6F-4D00-9BF4-B5A432F4B8B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Configurations", "Services.Configurations\Services.Configurations.csproj", "{4B5103B8-FE19-488C-9CDC-6EE4D2CDD559}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.ContextMongoDb", "Services.ContextMongoDb\Services.ContextMongoDb.csproj", "{A4CB27B7-BAB8-4AD6-BA6A-47CA838B6338}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Business", "Services.Business\Services.Business.csproj", "{A023AFB1-01E7-44F2-9CE3-E64B1479023A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Entities", "Security.Entities\Security.Entities.csproj", "{02970F65-81B9-4F74-BD09-5422601DC4A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.API.Service", "Security.API.Service\Security.API.Service.csproj", "{8B693729-2604-4745-B688-E350F5C72233}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Configurations", "Security.Configurations\Security.Configurations.csproj", "{D0D6FED0-A94D-4B27-BCEE-47673363DEED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.API.Gateway", "Services.API.Gateway\Services.API.Gateway.csproj", "{738149B4-6C9D-484B-AD6A-522F52FC6FD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes", "kubernetes", "{6921680F-1813-4BAA-BDFA-3F81823E83F9}"
+	ProjectSection(SolutionItems) = preProject
+		gateway-deploy.yml = gateway-deploy.yml
+		gateway-pod.yml = gateway-pod.yml
+		gateway-service.yml = gateway-service.yml
+		microservice-libreria-deploy.yml = microservice-libreria-deploy.yml
+		microservice-libreria-pod.yml = microservice-libreria-pod.yml
+		microservice-libreria-service.yml = microservice-libreria-service.yml
+		microservice-seguridad-deploy.yml = microservice-seguridad-deploy.yml
+		microservice-seguridad-pod.yml = microservice-seguridad-pod.yml
+		microservice-seguridad-service.yml = microservice-seguridad-service.yml
+		mongo-deploy.yml = mongo-deploy.yml
+		mongo-pod.yml = mongo-pod.yml
+		mongo-service.yml = mongo-service.yml
+		sqlserver-deploy.yml = sqlserver-deploy.yml
+		sqlserver-pod.yml = sqlserver-pod.yml
+		sqlserver-service.yml = sqlserver-service.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70829F33-FD95-4A3C-9B64-8C2FEC66CFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70829F33-FD95-4A3C-9B64-8C2FEC66CFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70829F33-FD95-4A3C-9B64-8C2FEC66CFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70829F33-FD95-4A3C-9B64-8C2FEC66CFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515A29F9-7C6F-4D00-9BF4-B5A432F4B8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515A29F9-7C6F-4D00-9BF4-B5A432F4B8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515A29F9-7C6F-4D00-9BF4-B5A432F4B8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515A29F9-7C6F-4D00-9BF4-B5A432F4B8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5103B8-FE19-488C-9CDC-6EE4D2CDD559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5103B8-FE19-488C-9CDC-6EE4D2CDD559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5103B8-FE19-488C-9CDC-6EE4D2CDD559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5103B8-FE19-488C-9CDC-6EE4D2CDD559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4CB27B7-BAB8-4AD6-BA6A-47CA838B6338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4CB27B7-BAB8-4AD6-BA6A-47CA838B6338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4CB27B7-BAB8-4AD6-BA6A-47CA838B6338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4CB27B7-BAB8-4AD6-BA6A-47CA838B6338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A023AFB1-01E7-44F2-9CE3-E64B1479023A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A023AFB1-01E7-44F2-9CE3-E64B1479023A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A023AFB1-01E7-44F2-9CE3-E64B1479023A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A023AFB1-01E7-44F2-9CE3-E64B1479023A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02970F65-81B9-4F74-BD09-5422601DC4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02970F65-81B9-4F74-BD09-5422601DC4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02970F65-81B9-4F74-BD09-5422601DC4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02970F65-81B9-4F74-BD09-5422601DC4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B693729-2604-4745-B688-E350F5C72233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B693729-2604-4745-B688-E350F5C72233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B693729-2604-4745-B688-E350F5C72233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B693729-2604-4745-B688-E350F5C72233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D6FED0-A94D-4B27-BCEE-47673363DEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D6FED0-A94D-4B27-BCEE-47673363DEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D6FED0-A94D-4B27-BCEE-47673363DEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D6FED0-A94D-4B27-BCEE-47673363DEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{738149B4-6C9D-484B-AD6A-522F52FC6FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738149B4-6C9D-484B-AD6A-522F52FC6FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738149B4-6C9D-484B-AD6A-522F52FC6FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738149B4-6C9D-484B-AD6A-522F52FC6FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2D1F6F8-F99E-441D-B21F-193E36DA21C8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Servicios.API.Libreria</name>
+    </assembly>
+    <members>
+        <member name="T:Servicios.API.Libreria.Controllers.LibreriaAutorController">
+            <summary>
+             Autores
+             </summary>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaAutorController.#ctor(Services.ContextMongoDb.IMongoRepository{Services.Entities.AutorEntity})">
+            <summary>
+             Constructor para instancia del IMongoRepository
+             </summary>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaAutorController.Get">
+            <summary>
+             Obtiene todos los autores
+             </summary>
+             
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaAutorController.GetById(System.String)">
+            <summary>
+             Obtiene un autor por Id
+             </summary>
+             <param name="id">Identificador del autor</param>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaAutorController.Post(Services.Entities.AutorEntityAddDto)">
+            <summary>
+             Eliina un autor de la base de datos
+             </summary>
+             <param name="autor">Objeto de tipo a autor</param>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaAutorController.Update(System.String,Services.Entities.AutorEntityAddDto)">
+            <summary>
+             Eliina un autor de la base de datos
+             </summary>
+             <param name="id">Identificador del autor</param>
+             <param name="autor">Objeto de tipo a autor</param>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaAutorController.Delete(System.String)">
+            <summary>
+             Eliina un autor de la base de datos
+             </summary>
+             <param name="id">Identificador del autor</param>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaLibroController.Get">
+            <summary>
+             Obtiene todos los autores
+             </summary>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaLibroController.GetById(System.String)">
+            <summary>
+             Obtiene todos los autores
+             </summary>
+             <param name="id">Id del libro a buscar</param>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaLibroController.Post(Services.Entities.LibroEntityAddDto,System.String)">
+            <summary>
+             Eliina un autor de la base de datos
+             </summary>
+             <param name="libro">Objeto de tipo a autor</param>
+             <param name="autorId">Objeto de tipo a autor</param>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaLibroController.Update(System.String,Services.Entities.LibroEntityAddDto)">
+            <summary>
+             Eliina un autor de la base de datos
+             </summary>
+             <param name="libro">Objeto de tipo a autor</param>
+             <param name="id">Objeto de tipo a autor</param>
+        </member>
+        <member name="M:Servicios.API.Libreria.Controllers.LibreriaLibroController.Delete(System.String)">
+            <summary>
+             Obtiene todos los autores
+             </summary>
+             <param name="id">Id del libro a buscar</param>
+             
+        </member>
+        <member name="T:Servicios.API.Libreria.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Servicios.API.Libreria.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Servicios.API.Libreria.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Servicios.API.Libreria.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            This method gets called by the runtime. Use this method to add services to the container.
+        </member>
+        <member name="M:Servicios.API.Libreria.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        </member>
+        <member name="T:Servicios.API.Libreria.WeatherForecast">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

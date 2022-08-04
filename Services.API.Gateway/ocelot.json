@@ -1,0 +1,156 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/LibreriaAutor",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-libreria-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/autor",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/LibreriaAutor/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-libreria-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/autor/{id}",
+      "UpstreamHttpMethod": [ "GET", "UPDATE", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/LibreriaAutor/pagination",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-libreria-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/autor/pagination",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Usuario/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-seguridad-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/usuario/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Usuario/registrar",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8563
+        }
+      ],
+      "UpstreamPathTemplate": "/usuario/registrar",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Usuario?JWToken={JWToken}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-seguridad-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/usuario/{JWToken}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/LibreriaLibro",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-libreria-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/libro",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/LibreriaLibro/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-libreria-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/libro/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE", "UPDATE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/LibreriaLibro/{autorId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-libreria-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/libro/{autorId}",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/LibreriaLibro/Pagination",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-libreria-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/libro/pagination",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    }
+  ]
+}
